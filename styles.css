@@ -1,0 +1,236 @@
+/*  styles for header, main section, and footer */
+#menu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: cadetblue;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+#menu {
+    text-align: center;
+    padding: 0.5em;
+}
+
+#menu a {
+    color: #000;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+nav li {
+    margin-right: 20px;
+  }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+}
+  
+  /* styles for images, font sizes, and blocks */
+img {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+#contact-p {
+    margin-top: 75px;
+    text-align: left;
+    font-style: italic;
+}
+
+.block {
+    background-color: cadetblue;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-recipes {
+    font-style: italic;
+}
+
+.featured-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.block-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.block {
+    background-color: cadetblue;
+    padding: 20px;
+    width: 45%;
+    height: 100px;
+    margin: 20px;
+}
+   
+/* styles for table, list, and forms */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: middle;
+}
+  
+
+th {
+    background-color: cadetblue;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+input[type="email"], input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* styles for contact form */
+#contact-form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+  /* Label */
+.input_group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+  /* Input field */
+.input_group input, .input_group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+/* Textarea */
+.input_group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+  
+/* Submit button */
+.input_group button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+/* Hover effect on button */
+.input_group button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+  
+/* styles for testimonial/quote */
+blockquote {
+    background-color: rgba(32, 106, 99, 0.28);
+    font-size: 16px;
+    padding: 10px;
+    margin: auto;
+    float: right;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+}
+/* footer styles */
+
+footer {
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Add media queries for responsive design */
+@media (max-width: 767px) {
+    header, body, main, footer {
+      flex-direction: column;
+    }
+    img {
+        display: none
+    }
+}
